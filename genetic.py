@@ -1,6 +1,18 @@
-from random import random
+import random
+import copy
 
 from deap import algorithms, base, creator, tools
+from net import main
+import pandas as pd
+
+crossover_probability = 0.5
+mutation_probability = 0.5
+# Определение границ для каждой переменной
+bounds = [(1, 100), (1, 9), (0, 1), (1, 3)]
+
+csv_path = ('C:\\Users\\Gubay\\OneDrive\\Documents\\Archive_University\\Мага_3\\ml_course_work\\datasets'
+            '\\kdd_10000_labled_modified.csv')
+data = pd.read_csv(csv_path)
 
 # Создаем класс FitnessMax для определения максимизируемой функции
 creator.create("FitnessMax", base.Fitness, weights=(1.0,))
@@ -9,26 +21,64 @@ creator.create("FitnessMax", base.Fitness, weights=(1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMax)
 
 
+# Функция для генерации случайного целого числа от low до high
+def random_int(low, high):
+    return random.randint(low, high)
+
+
+# Функция для генерации случайного вещественного числа от low до high
+def random_float(low, high):
+    return random.uniform(low, high)
+
+
+def control_mutation(mutant):
+    if mutant[0] < 0:
+        mutant[0] = -mutant[0]
+    if mutant[0] == 0:
+        mutant[0] = 1
+
+    if mutant[1] < 0:
+        mutant[1] = -mutant[1]
+    if mutant[1] == 0:
+        mutant[1] = 1
+
+    if mutant[2] < 0:
+        mutant[2] = -mutant[2]
+    if mutant[2] == 0:
+        mutant[2] = 1
+
+    if mutant[3] < 0:
+        mutant[3] = -mutant[3]
+
+    return mutant
+
+
 # Определяем функцию оценки (fitness function), которая будет вычислять значение максимизируемой функции для каждой
 # хромосомы
 def evaluate(individual):
     # Здесь выполняется обучение модели и вычисление значения максимизируемой функции на основе выбранного набора
     # гиперпараметров
+    fitness_value = main(data, individual[0], individual[1], individual[2], individual[3], individual[4])
     return (fitness_value,)
 
 
 # Определяем размер популяции и количество поколений
-population_size = 100
-generations = 50
+population_size = 5
+generations = 5
 
 # Создаем объект Toolbox для хранения инструментов для работы с ГА
 toolbox = base.Toolbox()
 
 # Задаем функцию для инициализации хромосомы
-toolbox.register("attr_bool", random.randint, 0, 1)
+toolbox.register("attr_filter", random_int, bounds[0][0], bounds[0][1])
+toolbox.register("attr_kernel", random_int, bounds[1][0], bounds[1][1])
+toolbox.register("attr_float", random_float, bounds[2][0], bounds[2][1])
+toolbox.register("attr_algorithm", random_int, bounds[3][0], bounds[3][1])
 
 # Задаем функцию для создания индивидуума (хромосомы)
-toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.attr_bool, n=number_of_parameters)
+toolbox.register("individual", tools.initCycle, creator.Individual,
+                 (toolbox.attr_filter, toolbox.attr_filter, toolbox.attr_kernel, toolbox.attr_float, toolbox.attr_algorithm),
+                 n=1)
 
 # Задаем функцию для создания популяции
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
@@ -53,6 +103,7 @@ population = toolbox.population(n=population_size)
 
 # Выполняем генетический алгоритм
 for gen in range(generations):
+    print('start gen#' + str(gen))
     # Оцениваем популяцию
     fitnesses = list(map(toolbox.evaluate, population))
 
@@ -76,6 +127,7 @@ for gen in range(generations):
     for mutant in offspring:
         if random.random() < mutation_probability:
             toolbox.mutate(mutant)
+            mutant = control_mutation(mutant)
             del mutant.fitness.values
 
     # Вычисляем фитнес-значения для потомства
@@ -89,3 +141,4 @@ for gen in range(generations):
 
 # Получаем лучшее решение
 best_solution = tools.selBest(population, 1)[0]
+print(best_solution)
