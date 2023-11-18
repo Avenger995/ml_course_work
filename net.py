@@ -41,7 +41,13 @@ def build_model(filters_first_layer, filters_second_layer, kernel_size, dropout,
     return model
 
 
-def main(dataset, filters_first_layer, filters_second_layer, kernel_size, dropout, algorithm_enum):
+# Среднее предсказание от всех моделей
+def ensemble_predict(models, data):
+    predictions = [model.predict(data) for model in models]
+    return tf.reduce_mean(predictions, axis=0)
+
+
+def main(dataset, filters_first_layer, filters_second_layer, kernel_size, dropout, algorithm_enum, is_get_final_models=False):
     test_size = 0.2
     data_x = dataset.iloc[:, 0:dataset.shape[1] - 1]
     data_y = dataset.iloc[:, dataset.shape[1] - 1]
@@ -61,10 +67,8 @@ def main(dataset, filters_first_layer, filters_second_layer, kernel_size, dropou
         model.fit(df_x_train, df_y_train, epochs=5, batch_size=32, verbose=1)
         models_list.append(model)
 
-    # Среднее предсказание от всех моделей
-    def ensemble_predict(models, data):
-        predictions = [model.predict(data) for model in models]
-        return tf.reduce_mean(predictions, axis=0)
+    if is_get_final_models:
+        return models_list
 
     # Оценка ансамбля на тестовых данных
     ensemble_predictions = ensemble_predict(models_list, df_x_test)
