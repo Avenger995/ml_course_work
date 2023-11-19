@@ -1,8 +1,7 @@
 import random
-import copy
 
 from deap import algorithms, base, creator, tools
-from net import main
+from net import build_ensemble
 import pandas as pd
 
 crossover_probability = 0.5
@@ -50,6 +49,11 @@ def control_mutation(mutant):
     if mutant[3] < 0:
         mutant[3] = -mutant[3]
 
+    if mutant[4] < 0:
+        mutant[4] = -mutant[4]
+    if mutant[4] == 0:
+        mutant[4] = 1
+
     return mutant
 
 
@@ -58,7 +62,7 @@ def control_mutation(mutant):
 def evaluate(individual):
     # Здесь выполняется обучение модели и вычисление значения максимизируемой функции на основе выбранного набора
     # гиперпараметров
-    fitness_value = main(data, individual[0], individual[1], individual[2], individual[3], individual[4])
+    fitness_value = build_ensemble(data, individual[0], individual[1], individual[2], individual[3], individual[4], individual[5])
     return (fitness_value,)
 
 
@@ -77,14 +81,12 @@ toolbox.register("attr_algorithm", random_int, bounds[3][0], bounds[3][1])
 
 # Задаем функцию для создания индивидуума (хромосомы)
 toolbox.register("individual", tools.initCycle, creator.Individual,
-                 (toolbox.attr_filter, toolbox.attr_filter, toolbox.attr_kernel, toolbox.attr_float, toolbox.attr_algorithm),
+                 (toolbox.attr_filter, toolbox.attr_filter, toolbox.attr_kernel, toolbox.attr_float, toolbox.attr_filter,
+                  toolbox.attr_algorithm),
                  n=1)
 
 # Задаем функцию для создания популяции
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
-
-# Задаем функцию для оценки (fitness function)
-toolbox.register("evaluate", evaluate)
 
 # Задаем функцию для выбора родителей
 toolbox.register("select", tools.selTournament, tournsize=3)

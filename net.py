@@ -1,15 +1,9 @@
 import random
 import tensorflow as tf
 from keras import layers, models
-from enum import Enum
 from sklearn.model_selection import train_test_split
 import pandas as pd
-
-
-class AlgorithmEnum(Enum):
-    adam = 1,
-    rmsprop = 2,
-    sgd = 3
+from sklearn.preprocessing import StandardScaler
 
 
 def get_algorithm_enum(algorithm_enum) -> str:
@@ -22,7 +16,7 @@ def get_algorithm_enum(algorithm_enum) -> str:
 
 
 # Определение модели для бэггинга
-def build_model(filters_first_layer, filters_second_layer, kernel_size, dropout, algorithm_enum, input_shape):
+def build_model(filters_first_layer, filters_second_layer, kernel_size, dropout, dense_units, algorithm_enum, input_shape):
     model = models.Sequential([
         layers.Conv1D(filters_first_layer, kernel_size, padding='same', activation='relu', input_shape=input_shape),
         layers.MaxPooling1D(2),
@@ -30,8 +24,8 @@ def build_model(filters_first_layer, filters_second_layer, kernel_size, dropout,
         layers.Conv1D(filters_second_layer, kernel_size, padding='same', activation='relu'),
         layers.MaxPooling1D(2),
         layers.Flatten(),
-        layers.Dense(64, activation='relu'),
-        layers.Dense(10, activation='softmax')
+        layers.Dense(dense_units, activation='relu'),
+        layers.Dense(2, activation='softmax')
     ])
 
     model.compile(optimizer=get_algorithm_enum(algorithm_enum),
@@ -47,10 +41,20 @@ def ensemble_predict(models, data):
     return tf.reduce_mean(predictions, axis=0)
 
 
-def main(dataset, filters_first_layer, filters_second_layer, kernel_size, dropout, algorithm_enum, is_get_final_models=False):
+def build_ensemble(dataset, filters_first_layer, filters_second_layer, kernel_size, dropout, dense_units, algorithm_enum,
+                   is_get_final_models=False):
     test_size = 0.2
     data_x = dataset.iloc[:, 0:dataset.shape[1] - 1]
     data_y = dataset.iloc[:, dataset.shape[1] - 1]
+
+    # Сохранил имена столбцов и последний столбец
+    x_column_names = data_x.columns.tolist()
+
+    scaler = StandardScaler()
+    df_x_st_scaled = pd.DataFrame(scaler.fit_transform(data_x.iloc[:, :]))
+
+    data_x = df_x_st_scaled
+    data_x.columns = x_column_names
 
     # Создание и обучение ансамбля из 5 моделей
     num_models = 5
@@ -60,10 +64,9 @@ def main(dataset, filters_first_layer, filters_second_layer, kernel_size, dropou
         seed = random.randint(1, 100)
         df_x_train, df_x_test, df_y_train, df_y_test = (
             train_test_split(data_x, data_y, test_size=test_size, random_state=seed))
-        #df_x_train = df_x_train.values.reshape(df_x_train.shape[0], df_x_train.shape[1], 1)
-        #df_y_train = df_y_train.values.reshape(df_y_train.shape[0], 1, 1)
         input_shape = (df_x_train.shape[1], 1)
-        model = build_model(filters_first_layer, filters_second_layer, kernel_size, dropout, algorithm_enum, input_shape)
+        model = build_model(filters_first_layer, filters_second_layer, kernel_size, dropout, dense_units, algorithm_enum,
+                            input_shape)
         model.fit(df_x_train, df_y_train, epochs=5, batch_size=32, verbose=1)
         models_list.append(model)
 
@@ -83,5 +86,4 @@ if __name__ == "__main__":
     csv_path = ('C:\\Users\\Gubay\\OneDrive\\Documents\\Archive_University\\Мага_3\\ml_course_work\\datasets'
                 '\\kdd_10000_labled_modified.csv')
     data = pd.read_csv(csv_path)
-    result = main(data, 51, 99, 3, 0.706073411715844, 1)
-    #result = main(data, 32, 64, 3, 0.1, 1)
+    result = build_ensemble(data, 26, 5, 5, 0.0, 72, 1)
