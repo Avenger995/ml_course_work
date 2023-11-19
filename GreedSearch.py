@@ -1,7 +1,9 @@
-%%time
+import pandas as pd
+from net import build_ensemble
 
-# выбираем датасет
-data = df_0
+csv_path = ('C:\\Users\\Gubay\\OneDrive\\Documents\\Archive_University\\Мага_3\\ml_course_work\\datasets'
+            '\\kdd_10000_labled_modified.csv')
+data = pd.read_csv(csv_path)
 
 # Определяем набор гиперпараметров для поиска по сетке
 param_grid = {
@@ -9,7 +11,7 @@ param_grid = {
     'filters_second_layer': [63, 93],
     'kernel_size': [1, 3],
     'dropout': [0.3, 0.6],
-    'relu_count' : [64, 128],
+    'relu_count': [64, 128],
     'algorithm_enum': [1, 3]
 }
 
@@ -23,10 +25,10 @@ for alg_enum in param_grid['algorithm_enum']:
             for kernel in param_grid['kernel_size']:
                 for drop in param_grid['dropout']:
                     for r_count in param_grid['relu_count']:
-                        print(f"Trying: {filters1}, {filters2}, {kernel}, {drop}, {alg_enum}, {r_count}")
+                        print(f"Trying: {filters1}, {filters2}, {kernel}, {drop}, {r_count}, {alg_enum}")
 
                         # Запуск обучения модели для каждой комбинации гиперпараметров
-                        accuracy = main(data, filters1, filters2, kernel, drop, alg_enum, r_count)
+                        accuracy = build_ensemble(data, filters1, filters2, kernel, drop, r_count, alg_enum)
 
                         # Сравнение результатов и сохранение наилучшей комбинации
                         if accuracy > best_accuracy:
