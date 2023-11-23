@@ -1,0 +1,85 @@
+start create model
+2023-11-23 22:10:12.499917: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+end create model
+
+Epoch 1/25
+79/79 [==============================] - 2s 11ms/step - loss: 0.7304 - val_loss: 0.6936
+Epoch 2/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6588 - val_loss: 0.6349
+Epoch 3/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6303 - val_loss: 0.6379
+Epoch 4/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6287 - val_loss: 0.6360
+Epoch 5/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6282 - val_loss: 0.6345
+Epoch 6/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6276 - val_loss: 0.6323
+Epoch 7/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6272 - val_loss: 0.6300
+Epoch 8/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6259 - val_loss: 0.6301
+Epoch 9/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6262 - val_loss: 0.6312
+Epoch 10/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6255 - val_loss: 0.6301
+Epoch 11/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6251 - val_loss: 0.6295
+Epoch 12/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6251 - val_loss: 0.6293
+Epoch 13/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6253 - val_loss: 0.6298
+Epoch 14/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6254 - val_loss: 0.6295
+Epoch 15/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6249 - val_loss: 0.6289
+Epoch 16/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6250 - val_loss: 0.6293
+Epoch 17/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6250 - val_loss: 0.6286
+Epoch 18/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6250 - val_loss: 0.6286
+Epoch 19/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6253 - val_loss: 0.6287
+Epoch 20/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6249 - val_loss: 0.6289
+Epoch 21/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6249 - val_loss: 0.6288
+Epoch 22/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6247 - val_loss: 0.6288
+Epoch 23/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6249 - val_loss: 0.6287
+Epoch 24/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6247 - val_loss: 0.6279
+Epoch 25/25
+79/79 [==============================] - 1s 10ms/step - loss: 0.6246 - val_loss: 0.6281
+Model: "sequential_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ sequential_1 (Sequential)   (None, 57)                17353     
+                                                                 
+ sequential_2 (Sequential)   (None, 8, 1)              48325     
+                                                                 
+=================================================================
+Total params: 65678 (256.55 KB)
+Trainable params: 65678 (256.55 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Epoch 1/5
+250/250 [==============================] - 1s 1ms/step - loss: 0.0765 - accuracy: 0.9700 - recall_m: 0.9902 - precision_m: 0.9629 - f1_m: 0.9695 - balanced_accuracy_m: 0.9772
+Epoch 2/5
+250/250 [==============================] - 0s 1ms/step - loss: 5.9239e-04 - accuracy: 0.9999 - recall_m: 0.9996 - precision_m: 1.0000 - f1_m: 0.9998 - balanced_accuracy_m: 0.9998
+Epoch 3/5
+250/250 [==============================] - 0s 1ms/step - loss: 0.0012 - accuracy: 0.9997 - recall_m: 0.9994 - precision_m: 0.9995 - f1_m: 0.9994 - balanced_accuracy_m: 0.9996
+Epoch 4/5
+250/250 [==============================] - 0s 1ms/step - loss: 1.1278e-04 - accuracy: 1.0000 - recall_m: 1.0000 - precision_m: 1.0000 - f1_m: 1.0000 - balanced_accuracy_m: 1.0000
+Epoch 5/5
+250/250 [==============================] - 0s 1ms/step - loss: 1.6843e-04 - accuracy: 1.0000 - recall_m: 1.0000 - precision_m: 1.0000 - f1_m: 1.0000 - balanced_accuracy_m: 1.0000
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+1.0

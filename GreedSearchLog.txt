@@ -1,0 +1,647 @@
+C:\Users\Gubay\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Gubay\OneDrive\Documents\Archive_University\Мага_3\ml_course_work\GreedSearch.py 
+
+Trying: 56, 63, 1, 0.3, 64, 1
+
+Start building ensemble...
+2023-11-23 21:44:17.336718: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 1, 0.3, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 1, 0.6, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 1, 0.6, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997382164001
+Ensemble Recall: 0.9992441534996033
+Ensemble Precision: 1.0
+Ensemble F1: 0.9985569715499878
+Ensemble ensemble_balanced_accuracy_score: 0.9992784857749939
+Ensemble ROC_AUC_SCORE: 0.9999971397680925
+
+Trying: 56, 63, 3, 0.3, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 3, 0.3, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 3, 0.6, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 3, 0.6, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 1, 0.3, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 0.99989994764328
+Ensemble Recall: 0.9998619675636291
+Ensemble Precision: 1.0
+Ensemble F1: 0.9997354507446289
+Ensemble ensemble_balanced_accuracy_score: 0.9998677253723145
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 1, 0.3, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 1, 0.6, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 1, 0.6, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997382164001
+Ensemble Recall: 0.9991645812988281
+Ensemble Precision: 1.0
+Ensemble F1: 0.9984127283096313
+Ensemble ensemble_balanced_accuracy_score: 0.9992063641548157
+Ensemble ROC_AUC_SCORE: 0.9999985202897864
+
+Trying: 56, 93, 3, 0.3, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 0.9995998024940491
+Ensemble Recall: 0.9986977458000184
+Ensemble Precision: 1.0
+Ensemble F1: 0.9976984143257142
+Ensemble ensemble_balanced_accuracy_score: 0.9988492131233215
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 3, 0.3, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997501373291
+Ensemble Recall: 0.9984938740730286
+Ensemble Precision: 1.0
+Ensemble F1: 0.9972713589668274
+Ensemble ensemble_balanced_accuracy_score: 0.9986356973648072
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 3, 0.6, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 3, 0.6, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 1, 0.3, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 1, 0.3, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 0.9999999999999999
+
+Trying: 76, 63, 1, 0.6, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 0.99989994764328
+Ensemble Recall: 0.9998132586479187
+Ensemble Precision: 1.0
+Ensemble F1: 0.9996472716331481
+Ensemble ensemble_balanced_accuracy_score: 0.9998236298561096
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 1, 0.6, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997382164001
+Ensemble Recall: 0.9992441534996033
+Ensemble Precision: 1.0
+Ensemble F1: 0.9985569715499878
+Ensemble ensemble_balanced_accuracy_score: 0.9992784857749939
+Ensemble ROC_AUC_SCORE: 0.9999971397680923
+
+Trying: 76, 63, 3, 0.3, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 3, 0.3, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 3, 0.6, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 0.9841269850730896
+Ensemble Precision: 0.9841269850730896
+Ensemble F1: 0.9841269850730896
+Ensemble ensemble_balanced_accuracy_score: 0.9920634627342224
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 3, 0.6, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 1, 0.3, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 1, 0.3, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 0.9992996454238892
+Ensemble Recall: 0.9985185623168945
+Ensemble Precision: 0.9992063522338868
+Ensemble F1: 0.9980158805847168
+Ensemble ensemble_balanced_accuracy_score: 0.9988809466362
+Ensemble ROC_AUC_SCORE: 0.9999969947137014
+
+Trying: 76, 93, 1, 0.6, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 1, 0.6, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 0.99989994764328
+Ensemble Recall: 0.999546492099762
+Ensemble Precision: 1.0
+Ensemble F1: 0.9992063522338868
+Ensemble ensemble_balanced_accuracy_score: 0.9996031761169434
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 3, 0.3, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 3, 0.3, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 3, 0.6, 64, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 3, 0.6, 128, 1
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 1, 0.3, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.99989994764328
+Ensemble Recall: 0.9997114062309265
+Ensemble Precision: 1.0
+Ensemble F1: 0.9994708895683289
+Ensemble ensemble_balanced_accuracy_score: 0.9997354507446289
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 1, 0.3, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9997998952865601
+Ensemble Recall: 0.9838246464729309
+Ensemble Precision: 0.9841269850730896
+Ensemble F1: 0.9835497975349426
+Ensemble ensemble_balanced_accuracy_score: 0.99177485704422
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 1, 0.6, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997382164001
+Ensemble Recall: 0.9990662932395935
+Ensemble Precision: 1.0
+Ensemble F1: 0.998236358165741
+Ensemble ensemble_balanced_accuracy_score: 0.9991181492805481
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 1, 0.6, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997382164001
+Ensemble Recall: 0.9991645812988281
+Ensemble Precision: 1.0
+Ensemble F1: 0.9984127283096313
+Ensemble ensemble_balanced_accuracy_score: 0.9992063641548157
+Ensemble ROC_AUC_SCORE: 0.9999798517085751
+
+Trying: 56, 63, 3, 0.3, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 3, 0.3, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 3, 0.6, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 63, 3, 0.6, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 1, 0.3, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9995997905731201
+Ensemble Recall: 0.9981859683990478
+Ensemble Precision: 1.0
+Ensemble F1: 0.9968254089355468
+Ensemble ensemble_balanced_accuracy_score: 0.9984127044677734
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 1, 0.3, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997382164001
+Ensemble Recall: 0.9991645812988281
+Ensemble Precision: 1.0
+Ensemble F1: 0.9984127283096313
+Ensemble ensemble_balanced_accuracy_score: 0.9992063641548157
+Ensemble ROC_AUC_SCORE: 0.9999867932169962
+
+Trying: 56, 93, 1, 0.6, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.99989994764328
+Ensemble Recall: 0.9998329162597657
+Ensemble Precision: 1.0
+Ensemble F1: 0.9996825456619263
+Ensemble ensemble_balanced_accuracy_score: 0.9998412728309631
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 1, 0.6, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9997998952865601
+Ensemble Recall: 0.999092984199524
+Ensemble Precision: 1.0
+Ensemble F1: 0.9984127044677734
+Ensemble ensemble_balanced_accuracy_score: 0.9992063522338868
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 3, 0.3, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 3, 0.3, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 0.9841269850730896
+Ensemble Precision: 0.9841269850730896
+Ensemble F1: 0.9841269850730896
+Ensemble ensemble_balanced_accuracy_score: 0.9920634627342224
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 3, 0.6, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 56, 93, 3, 0.6, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 1, 0.3, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.99969984292984
+Ensemble Recall: 0.9987603902816773
+Ensemble Precision: 0.9989418029785156
+Ensemble F1: 0.9989177465438843
+Ensemble ensemble_balanced_accuracy_score: 0.9994059681892395
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 1, 0.3, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 1, 0.6, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9995997905731201
+Ensemble Recall: 0.9989364862442016
+Ensemble Precision: 0.9988536238670349
+Ensemble F1: 0.9992063522338868
+Ensemble ensemble_balanced_accuracy_score: 0.9994100451469421
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 1, 0.6, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9993996977806091
+Ensemble Recall: 0.9984090685844421
+Ensemble Precision: 0.9981481432914734
+Ensemble F1: 0.9989418148994446
+Ensemble ensemble_balanced_accuracy_score: 0.9992985725402832
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 3, 0.3, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 3, 0.3, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 3, 0.6, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 63, 3, 0.6, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.99989994764328
+Ensemble Recall: 0.9997557997703552
+Ensemble Precision: 1.0
+Ensemble F1: 0.999546492099762
+Ensemble ensemble_balanced_accuracy_score: 0.9997732520103455
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 1, 0.3, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997382164001
+Ensemble Recall: 0.9991645812988281
+Ensemble Precision: 1.0
+Ensemble F1: 0.9984127283096313
+Ensemble ensemble_balanced_accuracy_score: 0.9992063641548157
+Ensemble ROC_AUC_SCORE: 0.999982390955995
+
+Trying: 76, 93, 1, 0.3, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997382164001
+Ensemble Recall: 0.9991645812988281
+Ensemble Precision: 1.0
+Ensemble F1: 0.9984127283096313
+Ensemble ensemble_balanced_accuracy_score: 0.9992063641548157
+Ensemble ROC_AUC_SCORE: 0.9999854456117063
+
+Trying: 76, 93, 1, 0.6, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 1, 0.6, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 0.9994997382164001
+Ensemble Recall: 0.9985569715499878
+Ensemble Precision: 1.0
+Ensemble F1: 0.9973545670509338
+Ensemble ensemble_balanced_accuracy_score: 0.9986771941184998
+Ensemble ROC_AUC_SCORE: 0.9999883375123915
+
+Trying: 76, 93, 3, 0.3, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 3, 0.3, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 3, 0.6, 64, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+
+Trying: 76, 93, 3, 0.6, 128, 3
+
+Start building ensemble...
+Ensemble Accuracy: 1.0
+Ensemble Recall: 1.0
+Ensemble Precision: 1.0
+Ensemble F1: 1.0
+Ensemble ensemble_balanced_accuracy_score: 1.0
+Ensemble ROC_AUC_SCORE: 1.0
+Best BalancedAccuracy: 1.0
+Best Parameters: {'filters_first_layer': 56, 'filters_second_layer': 63, 'kernel_size': 1, 'dropout': 0.3, 'relu_count': 64, 'algorithm_enum': 1}
+
+Process finished with exit code 0

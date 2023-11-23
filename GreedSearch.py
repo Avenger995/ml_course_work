@@ -25,7 +25,7 @@ for alg_enum in param_grid['algorithm_enum']:
             for kernel in param_grid['kernel_size']:
                 for drop in param_grid['dropout']:
                     for r_count in param_grid['relu_count']:
-                        print(f"Trying: {filters1}, {filters2}, {kernel}, {drop}, {r_count}, {alg_enum}")
+                        print(f"\nTrying: {filters1}, {filters2}, {kernel}, {drop}, {r_count}, {alg_enum}")
 
                         # Запуск обучения модели для каждой комбинации гиперпараметров
                         accuracy = build_ensemble(data, filters1, filters2, kernel, drop, r_count, alg_enum)
@@ -40,5 +40,5 @@ for alg_enum in param_grid['algorithm_enum']:
                                            'relu_count': r_count,
                                            'algorithm_enum': alg_enum}
 
-print("Best Accuracy:", best_accuracy)
+print("Best BalancedAccuracy:", best_accuracy)
 print("Best Parameters:", best_params)

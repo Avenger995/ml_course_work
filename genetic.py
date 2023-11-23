@@ -1,6 +1,6 @@
 import random
 
-from deap import algorithms, base, creator, tools
+from deap import base, creator, tools
 from net import build_ensemble
 import pandas as pd
 
@@ -59,7 +59,7 @@ def control_mutation(mutant):
 
 # Определяем функцию оценки (fitness function), которая будет вычислять значение максимизируемой функции для каждой
 # хромосомы
-def evaluate(individual):
+def evaluate_g(individual):
     # Здесь выполняется обучение модели и вычисление значения максимизируемой функции на основе выбранного набора
     # гиперпараметров
     fitness_value = build_ensemble(data, individual[0], individual[1], individual[2], individual[3], individual[4], individual[5])
@@ -98,7 +98,7 @@ toolbox.register("mate", tools.cxTwoPoint)
 toolbox.register("mutate", tools.mutFlipBit, indpb=0.05)
 
 # Задаем функцию для оценки популяции
-toolbox.register("evaluate", evaluate)
+toolbox.register("evaluate", evaluate_g)
 
 # Создаем начальную популяцию
 population = toolbox.population(n=population_size)
